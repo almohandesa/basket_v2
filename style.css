@@ -464,7 +464,7 @@ color: aliceblue;
   margin: auto;
   margin-bottom: 120px;
   text-align: center;
-  overflow: none;
+  overflow-x: hidden;
 }
 
 
