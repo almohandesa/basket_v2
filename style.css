@@ -1288,13 +1288,14 @@ footer .Copyright{
   align-items: center;
   margin-left: 100px;
   margin-top: 20px;
-  overflow-x:hidden;
+  
        
 }
 
 #cart-container  table thead{
 
   font-weight: bold;
+  overflow-x:hidden;
 
 
 }
@@ -1334,7 +1335,7 @@ footer .Copyright{
   width: 100px;
   border-radius: 20px;
   margin-top: 5px;
- 
+ overflow-x:hidden;
 }
 
 #cart-container table td:nth-child(1){
@@ -1349,6 +1350,7 @@ footer .Copyright{
 
 #cart-container  tbody i{
   color: #ff3a3a;
+  overflow-x:hidden;
 }
 
 #cart-bottom .coupcn>div{
@@ -1661,4 +1663,5 @@ cursor: pointer;
 
 #myMenu li a:hover {
   background-color: #eee;
+  overflow-x:hidden;
 }
