@@ -1288,6 +1288,8 @@ footer .Copyright{
   align-items: center;
   margin-left: 100px;
   margin-top: 20px;
+  overflow-x:hidden;
+       
 }
 
 #cart-container  table thead{
