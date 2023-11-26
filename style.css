@@ -219,7 +219,7 @@ color: aliceblue;
   right: 0.5%;
   width: 320px;
   max-height: 0px;
-  overflow: hidden;
+  overflow-x: hidden;
   transition: max-height 0.5s;
   
 
