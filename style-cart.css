@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+  
+}
+
+button.normal {
+  font-size: 20px;
+  font-weight: 900;
+  padding: 15px 30px;
+  color: #ffffff;
+  background-color: #ff3a3a;
+  background-size: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+body {
+  width: 100%;
+ 
+}
+
+
+
+
+/* هذ الجزء مخصص برأس الصفحة*/
+#header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 35px;
+  background: #ff3a3a;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1.5);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+}
+  
+  
+  /* هذ الجزء مخصص بتقسيم رأس الصفحة*/
+  
+  #navbar{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+  
+  }
+  
+  #header a .logo{
+    width: 50%;
+    margin: 15px 0 0 0;
+  
+  
+  
+  
+  
+  }
+  
+  /* هذ الجزء مخصص السيرش بار رأس الصفحة*/
+  
+  #search-bar{
+    width: 100%;
+    height: 100%;
+    background: #ffcaca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: #202020;
+    padding-left: 150px;
+  
+  
+  
+  }
+  form{
+    background: #ffffff;
+    width: 450px;
+    height: 30px;
+    display: flex;
+    border-radius: 5px;
+  
+  }
+  form input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 7px 0 0 0;
+    color: #777;
+  }
+  form button{
+    background: #3a3a3a;
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 0 5px 5px 0;
+  }
+  form button:hover{
+    background: #ff7d7d;
+    color: #ffffff;
+  }
+  form .fa-search{
+    align-items: center;
+    padding: 7px 15px;
+    color: #777;
+    
+  }
+  
+  /* هذ الجزء مخصص بتباعد بين نصوص رأس الصفحة*/
+  
+  #navbar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+  
+  }
+  
+  /* هذ الجزء مخصص بنصوص برأس الصفحة*/
+  #navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 900;
+  color: aliceblue;
+  
+  
+  
+  }
+  #navbar li img{
+    width: 35px;
+    border-radius: 50px;
+  }
+  
+  
+  #navbar li a.active{
+    color: #1d1d1d;
+    background-color: #202020; 
+    padding: 40px 20px 10px 20px;
+    border-radius: 5px;
+    align-items: center;
+    overflow: hidden;
+    font-size: 18px;
+    
+    
+    } 
+
+
+
+/* هذ الجزء مخصص البروفايل*/
+
+
+
+ 
+.account .profile .profile-pic {
+    width: 120px;
+    border: 3px solid #fff;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-left: 680px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  
+  
+  }
+
+
+/* هذ الجزء مخصص البروفايل*/
+
+  
+  .account-page .profile{
+    width: 20%;
+
+  }
+  
+
+  
+  .account-page .profile .profile-detail{
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    overflow: none;
+  }
+  
+  
+  .account .profile  h2{
+    color:  #ff3a3a;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    margin-right: -130px;
+  }
+  .account .profile  p{
+    margin-top: 5px;
+    margin-left: 660px;
+    font-weight: 400;
+  }
+  
+  
+  .account-page .profile ul {
+    list-style: none;
+    padding: 10px;
+    margin-right: -950px;
+    margin-left: 900px;
+  
+  }
+  
+  .account-page .profile ul li {
+    margin-bottom: 10px;
+  
+  }
+  
+  
+  
+  .account-page .profile ul li a{
+    color: #1f1f1f;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #ececec;
+    text-align: right;
+    padding: 5px 10px ;
+    display: block;
+    margin-left: 30px;
+    font-weight: 700;
+  }
+  
+  .active,
+  .account-page .profile ul li a:hover {
+    color: #ffff !important;
+    background-color: #ff3a3a;
+    border-radius: 10px 0;
+  }
+
+  
+  /******************************
+  *************
+  ******************************
+  **************************/
+  
+  .account-page{
+    height: 680px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 250px;
+  }
+  
+  
+
+  
+  .account-page  .profile .profile-detail  h4 {
+    font-weight: 700;
+    color: #fff;
+    background-color: #ff5f5f;
+    text-transform: uppercase;
+    padding: 5px ;
+    margin-bottom: 30px;
+    display: block;
+  }
+  
+  .account-page  .profile .profile-detail .profile-form .form-group {
+    margin: 10px 5px;
+    width: calc(100% - 10px);
+  
+  
+  }
+  
+  .account-page  .profile .profile-detail .profile-form .form-group label{
+    display: block;
+    margin-bottom: 6px;
+    text-align: right;
+    font-weight: 600;
+  }
+  
+  
+  .account-page .profile .profile-detail .profile-form input,
+  .account-page .profile .profile-detail .profile-form select,
+  .account-page .profile .profile-detail .profile-form textarea{
+    width: 100%;
+    padding: 8px 5px ;
+    
+  }
+  
+  
+  .account-page .profile .profile-detail .profile-form input:focus,
+  .account-page .profile .profile-detail .profile-form select:focus,
+  .account-page .profile .profile-detail .profile-form textarea:focus{
+    outline:1 px solid #1d1d1d;
+    
+  }
+  
+  
+  .account-page .profile .profile-detail .profile-form  .form-inline {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  
+  
+  .account-page .profile .profile-detail .profile-form input{
+  
+    border: 1px solid #181616;
+    padding: 5px 10px ;
+    display: block;
+    font-weight: 700;
+  
+  }
+  .account-page .profile .profile-detail .profile-form{
+    margin-top: -250px;
+    color: #1f1f1f;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 30px ;
+    border: 10px solid #dddddd;
+    background-color: #dddddd;
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    width: 650px;
+    margin-left: 55px;
+
+    
+  
+  }
+  
+  
+  
+  .account-page .profile .profile-detail .profile-form .h-contact{
+  
+  
+    color: #fff;
+    display: block;
+    color: #ffffff;
+    background-color: #ff5f5f;
+    border: 1px solid #181616;
+    padding: 5px 30px ;
+
+    
+   
+  
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+/* هذ الجزء مخصص للوحة الاعلانات*/
+#Signboard{
+    background-image: url("img/slider/slider-5.png");
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 10% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: center;
+    
+    }
+    #Signboard{
+      background-image: url("img/slider/slider-4.png");
+    }
+    
+    #Signboard h2 {
+         padding-bottom: 15px;
+         
+    
+    }
+    
+    #Signboard h1{
+    color: #ff3a3a;
+    
+    }
+    
+    #Signboard p{
+    font-size: 20px;
+    
+    }
+    
+    
+    #Signboard button{
+    background-color: #ff3a3a;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: #ff3a3a;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    
+    
+    }
+
+
+
+
+
+
+  
+/* الصفحة الرئيسية هذا الجزء خاص بالفوتر  */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+  }
+  
+  footer .logo{
+    width: 50%;
+    margin-bottom: 30px;
+  
+  }
+  
+  footer h4{
+    font-weight: 1000;
+    font-size: 14px;
+    padding-bottom: 20px;
+    
+  
+  }
+  footer p{
+    font-weight: 500;
+    font-size: 13px;
+    margin: 0 0 8px 0;
+  
+  }
+  
+  
+  footer a{
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none;
+    color: #2b2b2b;
+    margin: 10px;
+  
+  }
+  
+  footer .Follow{
+    margin-top: 20px;
+  
+  }
+  
+  footer .Follow i{
+    color: #000000;
+    padding-right: 4px;
+    cursor: pointer;
+    
+  }
+  
+  footer .install .row img{
+    background-color: #ff5f5f ;
+    border: 1px solid #202020;
+    border-radius: 5px;
+  }
+  
+  footer .install img{
+    margin: 10px 0 15px 0;
+  }
+  
+  footer .Follow i:hover,
+  footer a:hover{
+    color: #ff3a3a;
+  }
+  
+  footer .Copyright{
+    width: 100%;
+    text-align: center;
+  
+  }
+  

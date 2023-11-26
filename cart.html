@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> basket Ecommerce </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/SVG/favicon.svg">
+        
+    </head>
+   
+    </body>
+
+        <section id="header">
+        <a href="index.html"><img src="img/logo.png" class="logo"  alt=""></a>
+        
+        <form class="search-bar">
+            <form  >
+                <i class="fas fa-search"></i>
+                <input type="text" neme="" id="search-item" placeholder="ما الذي تبحث عنه ؟" onkeyup="search()">
+                <button type="submit">Search</button>
+    
+            </form>
+        </div>
+        <div>
+           
+            <nav id="navbar">
+                
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                    
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="wishlist.html"><i class="fa-solid fa-heart-circle-check"></i></a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
+                
+               
+                    <img src="img/account/user.jpg" class="user-pic" onclick="togglemenu()">
+
+                    <div class="sub-menu-wrap" id="subMenu">
+                        <div class="sub-menu">
+                            <div class="user-info">
+                                <img src="img/account/user.jpg">
+                                <h2>User Name </h2>
+                            </div>
+                            <hr>
+
+                            <a href="my-account.html" class="sub-menu-link">
+                              <img src="img/account/profile.png">
+                              <p>Edit profile</p>
+                              
+                            </a>
+
+                            <a href="hala.html" class="sub-menu-link">
+                                <img src="img/account/setting.png">
+                                <p>Setting & Privacy</p>
+                                
+                              </a>
+
+                              <a href="#" class="sub-menu-link">
+                                <img src="img/account/help.png">
+                                <p>Help & Support</p>
+                                
+                              </a>
+
+                              <a href="#" class="sub-menu-link">
+                                <img src="img/account/logout.png">
+                                <p>Log Out</p>
+                                
+                              </a>
+
+                        </div>
+                    </div>
+                
+            </nav>
+        </div>
+        
+        </section>
+        <section id="cart" class="container">
+            <h2 class="shop">Shopping</h2>
+            <hr>
+        </section>
+        <section id="cart-container">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Remove</td>
+                        <td>imgge</td>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Total</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                        <td><img src="img/products/f5.jpg" alt=""></td>
+                        <td>
+                            <h5>Produce-name</h5>
+                        </td>
+                        <td><h3>$ 33</h3></td>
+
+                        <td><input type="number" value="1" min="1" max="1000"></td>
+                        <td><h3>$ 33</h3></td>
+                    
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                        <td><img src="img/products/n2.jpg" alt=""></td>
+                        <td>
+                            <h5>Produce-name</h5>
+                        </td>
+                        <td><h3>$ 33</h3></td>
+
+                        <td><input type="number" value="1" min="1" max="1000"></td>
+                        <td><h3>$ 33</h3></td>
+                    
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                        <td><img src="img/products/f6.jpg" alt=""></td>
+                        <td>
+                            <h5>Produce-name</h5>
+                        </td>
+                        <td><h3>$ 33</h3></td>
+
+                        <td><input type="number" value="1" min="1" max="1000"></td>
+                        <td><h3>$ 33</h3></td>
+                    
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                        <td><img src="img/products/f3.jpg" alt=""></td>
+                        <td>
+                            <h5>Produce-name</h5>
+                        </td>
+                        <td><h3>$ 33</h3></td>
+
+                        <td><input type="number" value="1" min="1" max="1000"></td>
+                        <td><h3>$ 33</h3></td>
+                    
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                        <td><img src="img/products/f1.jpg" alt=""></td>
+                        <td>
+                            <h5>Produce-name</h5>
+                        </td>
+                        <td><h3>$ 33</h3></td>
+
+                        <td><input type="number" value="1" min="1" max="1000"></td>
+                        <td><h3>$ 33</h3></td>
+                    
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                        <td><img src="img/products/f2.jpg" alt=""></td>
+                        <td>
+                            <h5>Produce-name</h5>
+                        </td>
+                        <td><h3>$ 33</h3></td>
+
+                        <td><input type="number" value="1" min="1" max="1000"></td>
+                        <td><h3>$ 33</h3></td>
+                    
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+        <section id="cart-bottom" class="container" >
+            <div class="row">
+                <div class="coupcn col-lg-6 col-md-6 col-12 mb-4"> 
+                    <div>
+                        <h5>Coupon</h5>
+                        <p>Enter Your Coupon Code If You Have One.</p>
+                        <input type="text"placeholder="Coupon Code" >
+                        <button>Apply Coupon </button>
+                    </div>
+                </div>
+                <div class="total col-lg-6 col-md-6 col-12 "> 
+                    <div>
+                        <h5>Cart Total</h5>
+                        <div class="d-flex justify-content-between">
+                            <h6>Subtotal</h6>
+                            <p>$180</p>
+
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6>Shipping</h6>
+                            <p>$180</p>
+
+                        </div>
+                        <hr class="second-hr">
+                        <div class="d-flex justify-content-between">
+                            <h6>Total</h6>
+                            <p>$180</p>
+
+                        </div>
+                        <button>Proceed To Checkout </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="section-p1">
+            <div class="col">
+                <img class="logo" src="img/logo.png" alt="">
+                <h4>contact</h4>
+                <p><strong>Address: </Address> 20th | cairo | Egypt </strong></p>
+                <p><strong>Phone: </Address>(+20) 1000000000</strong></p>
+                <p><strong>Hours: </Address> 24/7 </strong></p>
+                <div class="Follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <i class=" fab fa-facebook-f"></i>
+                        <i class=" fab fa-twitter"></i>
+                        <i class=" fab fa-instagram"></i>
+                        <i class=" fab fa-pinterest"></i>
+                        <i class=" fab fa-youtube"></i>
+                    </div>
+    
+                </div>
+    
+            </div>
+            <div class="col">
+                <h4>about</h4>
+                <a href="#">about</a>
+                <a href="#">delivery Information</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Terms & conditions</a>
+                <a href="#">contact Us</a>
+            </div>
+            <div class="col">
+                <h4>My account</h4>
+                <a href="#">Sign in</a>
+                <a href="#">View cart</a>
+                <a href="#">My wishlist</a>
+                <a href="#">Track my Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col install">
+                <h4>install App</h4>
+                <p>From App Store Or Google Play</p>
+                <div class="row">
+                    <img src="img/pay/app.jpg" alt="">
+                    <img src="img/pay/play.jpg" alt="">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="img/pay/pay.png" alt="">
+    
+            </div>
+            <div class="Copyright">
+              <p>@2023 - Basket - HTML-CSS Ecommerce</p>  
+            </div>
+    
+    
+    
+        </footer>
+    
+    
+    
+    
+    
+          <script src="script.js"></script>
+         <script>
+            let subMenu = document.getElementById("subMenu");
+                 
+              function togglemenu(){
+                   subMenu.classList.toggle("open-menu");
+              }
+         </script>
+          
+         
+        <body>
+    
+    
+    
+    </html>

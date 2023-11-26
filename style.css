@@ -1,0 +1,1662 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #ffffff;
+}
+
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+  
+}
+
+button.normal {
+  font-size: 20px;
+  font-weight: 900;
+  padding: 15px 30px;
+  color: #ffffff;
+  background-color: #ff3a3a;
+  background-size: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+body {
+  width: 100%;
+ 
+}
+
+
+
+
+/* هذ الجزء مخصص برأس الصفحة*/
+#header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 35px;
+  background: #ff3a3a;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1.5);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+}
+
+
+/* هذ الجزء مخصص بتقسيم رأس الصفحة*/
+
+#navbar{
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+
+}
+
+#header a .logo{
+  width: 50%;
+  margin: 15px 0 0 0;
+
+
+
+
+
+}
+
+/* هذ الجزء مخصص السيرش بار رأس الصفحة*/
+
+#search-bar{
+  width: 100%;
+  height: 100%;
+  background: #ffcaca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: #202020;
+  padding-left: 150px;
+
+
+
+}
+form{
+  background: #ffffff;
+  width: 450px;
+  height: 30px;
+  display: flex;
+  border-radius: 5px;
+
+}
+form input{
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 7px 0 0 0;
+  color: #777;
+}
+form button{
+  background: #3a3a3a;
+  padding: 8px 15px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 0 5px 5px 0;
+}
+form button:hover{
+  background: #ff7d7d;
+  color: #ffffff;
+}
+form .fa-search{
+  align-items: center;
+  padding: 7px 15px;
+  color: #777;
+  
+}
+
+/* هذ الجزء مخصص بتباعد بين نصوص رأس الصفحة*/
+
+#navbar li{
+list-style: none;
+padding: 0px 20px;
+position: relative;
+
+}
+
+/* هذ الجزء مخصص بنصوص برأس الصفحة*/
+#navbar li a {
+text-decoration: none;
+font-size: 16px;
+font-weight: 900;
+color: aliceblue;
+
+
+
+}
+#navbar li img{
+  width: 35px;
+  border-radius: 50px;
+}
+
+/* ****************************** */
+
+#navbar li a.active{
+  color: #1d1d1d;
+  background-color: #202020; 
+  padding: 40px 20px 20px 20px;
+  border-radius: 5px;
+  align-items: center;
+  overflow: hidden;
+  font-size: 18px;
+  
+  
+  } 
+
+
+/* هذ الجزء مخصص بصورة البروفايل*/
+
+.user-pic {
+  width: 50px;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 30px;
+
+
+}
+
+.sub-menu-wrap{
+  position: absolute;
+  top: 90%;
+  right: 0.5%;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  
+
+}
+
+.sub-menu-wrap.open-menu{
+  max-height: 500px;
+}
+
+
+.sub-menu{
+  background:#fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.user-info{
+  display: flex;
+  align-items: center;
+}
+
+.user-info h2{
+  font-weight: 900;
+  font-size: 16px;
+
+}
+
+
+
+.user-info img{
+  width: 100px;
+  border-radius: 50px;
+  margin: 15px;
+}
+
+.sub-menu hr {
+  border: 0;
+  border-radius: 50px;
+  height: 2px;
+  width: 100%;
+  background: #afafaf;
+  margin: 15px 0 10px ;
+}
+
+.sub-menu-link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #363636;
+  margin: 12px 0 ;
+
+}
+
+.sub-menu-link p{
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+
+}
+
+
+.sub-menu-link img{
+  width: 35px;
+  background:#cacaca;
+  border-radius: 50px;
+  padding: 8px ;
+  margin-right: 15px;
+
+}
+
+.sub-menu-link span{
+  font-size: 15px;
+  font-weight: bold;
+  transition: transform 0.5s;
+
+}
+
+.sub-menu-link:hover span{
+  transform: translateX(-20px);
+  color: #fff;
+  font-weight: bold;
+
+}
+
+
+.sub-menu-link:hover p{
+  font-weight: bold;
+  color: #fff;
+  background-color: #000000;
+  border-radius: 5px;
+  border: #1d1d1d;
+  margin-right: -10px;
+  padding: 10px;
+
+}
+
+
+
+/* هذ الجزء مخصص البروفايل*/
+
+
+
+ 
+.account .profile .profile-pic {
+  width: 150px;
+  border: 3px solid #fff;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-left: 680px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+
+
+}
+
+/****************
+
+.Account .profile{
+  background:#f5f4f4;
+  padding: 20px;
+  margin: 0 1100px;
+  border-radius: 20px;
+    width: 320px;
+    max-height: 600px;
+    direction: rtl;
+    
+  
+  
+}
+
+.Account .user-info{
+  display: flex;
+  align-items: center;
+  
+}
+
+.Account .user-info h2{
+  font-weight: 900;
+  font-size: 16px;
+
+}
+
+
+
+.Account .user-info img{
+  width: 100px;
+  border-radius: 50px;
+  margin: 15px;
+}
+
+.Account .profile hr {
+  border: 0;
+  border-radius: 50px;
+  height: 2px;
+  width: 100%;
+  background: #afafaf;
+  margin: 15px 0 10px ;
+}
+
+.Account .profile-link{
+  display: flex;
+  right: 250px;
+  align-items: center;
+  text-decoration: none;
+  color: #363636;
+  margin: 12px 0 ;
+
+}
+
+.Account .profile-link p{
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+
+}
+
+
+.Account .profile-link img{
+  width: 35px;
+  background:#cacaca;
+  border-radius: 50px;
+  padding: 8px ;
+  margin-right: 15px;
+
+}
+
+.Account .profile-link span{
+  font-size: 15px;
+  font-weight: bold;
+  transition: transform 0.5s;
+  
+
+}
+
+.Account .profile-link:hover span{
+  transform: translateX(-20px);
+  color: #fff;
+  font-weight: bold;
+
+}
+
+
+.Account .profile-link:hover p{
+  font-weight: bold;
+  color: #fff;
+  background-color: #000000;
+  border-radius: 5px;
+  border: #1d1d1d;
+  margin-right: -30px;
+  padding: 10px;
+
+}
+
+***********************/
+
+
+
+/* هذ الجزء مخصص البروفايل*/
+
+.account-page{
+  display: inline-block;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.account-page .profile{
+  width: 30%;
+}
+
+.account-page .profile-detail{
+  width: 60%;
+  text-align: center;
+}
+
+
+.account-page .profile .profile-detail{
+  width: 140px;
+  height: 160px;
+  margin: auto;
+  margin-bottom: 120px;
+  text-align: center;
+  overflow: none;
+}
+
+
+.account .profile  h2{
+  color: var(--darkStalegray ) #ff3a3a;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold;
+  margin-right: -80px;
+}
+.account .profile  p{
+  margin-top: 5px;
+  margin-left: 660px;
+  font-weight: 400;
+}
+
+
+.account-page .profile ul {
+  list-style: none;
+  padding: 10px;
+  margin-right: -950px;
+  margin-left: 950px;
+
+}
+
+.account-page .profile ul li {
+  margin-bottom: 10px;
+
+}
+
+
+
+.account-page .profile ul li a{
+  color: #1f1f1f;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #ececec;
+  text-align: right;
+  padding: 5px 10px ;
+  display: block;
+  margin-left: 30px;
+  font-weight: 700;
+}
+
+.active,
+.account-page .profile ul li a:hover {
+  color: #ffff !important;
+  background-color: #ff3a3a;
+  border-radius: 10px 0;
+}
+
+.account-page{
+  height: 680px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+
+.account-page .profile-detail {
+
+  width: 60%;
+}
+
+
+.account-page  .profile .profile-detail  h4 {
+  font-weight: 700;
+  color: #fff;
+  background-color: #ff5f5f;
+  text-transform: uppercase;
+  padding: 5px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.account-page  .profile .profile-detail .profile-form .form-group {
+  margin: 10px 5px;
+  width: calc(100% - 10px);
+
+
+}
+
+.account-page  .profile .profile-detail .profile-form .form-group label{
+  display: block;
+  margin-bottom: 6px;
+  text-align: right;
+  font-weight: 600;
+}
+
+
+.account-page .profile .profile-detail .profile-form input,
+.account-page .profile .profile-detail .profile-form select,
+.account-page .profile .profile-detail .profile-form textarea{
+  width: 100%;
+  padding: 8px 5px ;
+  
+}
+
+
+.account-page .profile .profile-detail .profile-form input:focus,
+.account-page .profile .profile-detail .profile-form select:focus,
+.account-page .profile .profile-detail .profile-form textarea:focus{
+  outline:1 px solid #1d1d1d;
+  
+}
+
+
+.account-page .profile .profile-detail .profile-form  .form-inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+.account-page .profile .profile-detail .profile-form input{
+
+  border: 1px solid #181616;
+  padding: 5px 10px ;
+  display: block;
+  font-weight: 700;
+
+}
+.account-page .profile .profile-detail .profile-form{
+  margin-top: -250px;
+  color: #1f1f1f;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #181616;
+  padding: 5px 10px ;
+  display: block;
+  font-weight: 500;
+  font-size: 13px;
+
+}
+
+
+
+.account-page .profile .profile-detail .profile-form .h-contact{
+
+
+  color: #fff;
+  display: block;
+  color: #ffffff;
+  background-color: #ff5f5f;
+  border: 1px solid #181616;
+  padding: 5px 30px ;
+  
+ 
+
+}
+
+
+
+
+
+
+
+
+
+/**************
+
+
+
+
+
+
+
+
+.account-page .profile  .profile-topic{
+  margin: 20px;
+
+
+
+}
+
+.account-page .profile .profile-form h4{
+
+
+margin-top: 100x;
+  font-weight: 700;
+  background-color: #ffc400;
+   background-color: #ffc400;
+  
+}
+***************************/
+
+
+
+
+
+
+
+
+
+
+
+
+/* هذ الجزء مخصص للوحة الاعلانات*/
+#Signboard{
+background-image: url("img/slider/slider-5.png");
+height: 60vh;
+width: 100%;
+background-size: cover;
+background-position: top 10% right 0;
+padding: 0 80px;
+display: flex;
+flex-direction:column;
+align-items: flex-start;
+justify-content: center;
+
+}
+#Signboard{
+  background-image: url("img/slider/slider-4.png");
+}
+
+#Signboard h2 {
+     padding-bottom: 15px;
+     
+
+}
+
+#Signboard h1{
+color: #ff3a3a;
+
+}
+
+#Signboard p{
+font-size: 20px;
+
+}
+
+
+#Signboard button{
+background-color: #ff3a3a;
+color: white;
+font-size: 30px;
+font-weight: bold;
+padding: 5px 10px;
+border: #ff3a3a;
+border-radius: 10px;
+background-repeat: no-repeat;
+cursor: pointer;
+
+
+}
+
+/* الصفحة الرئيسية هذا الجزء خاص المميزات */
+
+#feature{
+  background-image: url(img/banner/banner-10.png);
+  height: 200px;
+  width: 100%;
+  margin: 35px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
+
+#feature .fe-box{
+  background-color: rgb(255, 255, 255);
+  width: 150px;
+  text-align: center;
+  padding: 20px 15px ;
+  box-shadow: 20px  20px 34px rgba(0.10, 0.10, 0.10, 0.10);
+  border: 1px  solid #c5ffd2;
+  border-radius: 10px  ;
+  margin: -33px 0 0 0;
+
+
+}
+
+#feature h6{
+  display: inline-block;
+  font-size: 13px;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: #202020;
+  background-color: #ffc2c2;
+}
+
+
+#feature .fe-box:hover{
+box-shadow: 10px 10px 55px rgba(70, 62, 221, 0.06);
+
+
+}
+
+#feature .fe-box img{
+   width: 100%;
+   margin-bottom: 20px;
+    
+  
+}
+
+#Product1 {
+  text-align: center;
+  
+
+}
+
+
+#Product1 .Pro-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+
+
+}
+
+
+/* الصفحة الرئيسية هذا الجزء خاص بالمنتجات */
+
+.caunt{
+  width:100x;
+  max-width: 80%;
+  margin: 70px auto 0;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  font-weight: 900;
+  font-size: 15px;
+  border: 1px solid #c5ffd2;
+  
+
+}
+
+.filter {
+  width: 45%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns:  50% 42% 60% 50%;
+  column-gap: 9%;
+  row-gap: 25px;
+
+}
+
+.filter .item {
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-left: 50px;
+  margin-top: 15px;
+
+}
+.filter .item select ,
+.filter .item input ,
+.filter .item button{
+  width: 100%;
+  padding: 0px 0 0 50px;
+  border: none;
+  background-color: transparent;
+  border-left:  ipx solid #ddd;
+
+
+}
+ 
+
+
+.filter .item label{
+  display: block;
+  width: 20%;
+  padding: 0 10px;
+  
+
+}
+
+
+.filter .item.submit button {
+  background-color: #ff5f5f;
+  height: 100%;
+  border-radius: 20px;
+  color:#ffffff ;
+  text-align: left;
+}
+
+.countResults{
+  color: #252525;
+  font-size: xx-large;
+  text-align: center;
+  padding: 20px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  background-color: #c5ffd2;
+}
+
+
+#list{
+  padding: 40px;
+  display: grid;
+  column-gap: 1%;
+  margin-right: 20px;
+  grid-template-columns: 25% 25% 25% 25%  ;
+  row-gap: 10px;
+}
+
+
+#list .item img {
+  width: 90%;
+  height: 300px;
+  object-fit: cover;
+  margin: 20px 0 ;
+  border-radius: 20px;
+}
+
+
+#list .item {
+  background-color: #c5ffd2;
+  text-align: center;
+  border-radius: 20px;
+}
+
+
+#list .item  .title{
+  font-weight: bold;
+}
+
+#list .item .price {
+  color: #252525;
+  letter-spacing: 1 px;
+  padding: 20px ;
+  border-radius: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* الصفحة الرئيسية هذا الجزء خاص بالمنتجات */
+
+
+#Product1 .Pro {
+  width: 23%;
+  min-width: 250px ;
+  padding: 10px 12px ;
+  border: 1px solid #ffcaca;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+
+
+}
+
+#Product1 .Pro:hover{
+  box-shadow: 20px 20px 30px rgba(0.06, 0.06, 0.06, 0.06);
+}
+
+
+#Product1 .Pro img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+
+
+
+}
+#Product1 .Pro .des {
+   text-align: start;
+   padding: 10px 0;
+
+
+}
+
+#Product1 .Pro .des span{
+  color: #2b2b2b;
+  font-size: 13px;
+  background-color: #ffd5d5;
+  padding: 5px 10px 2px 10px ;
+  border-radius: 15px;
+
+
+
+}
+
+
+#Product1 .Pro .des h5{
+  padding-top: 7px;
+  color: #202020;
+  font-size: 14px;
+
+}
+
+
+#Product1 .Pro .des i {
+  font-size: 12px;
+  color: #ff3a3a;
+  margin-top: 5px;
+}
+
+
+#Product1 .Pro .des h4 {
+  font-size:18px;
+  font-weight: bold;
+  color: #202020;
+  margin-top: 10px;
+  width: 60px;
+  height: 20px;
+  line-height: 25px;
+  border-radius: 10px;
+  background-color: #ffaeae;
+  text-align: center;
+  margin-top: 10px ;
+
+}
+/* تم التعديل محمد  */
+
+#Product1 .Pro .cart {
+  width: 45px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  background-color: #b5ffda;
+  color: #000000;
+  position: relative;
+  bottom: 40px ;
+  left: 60px;
+}
+
+
+
+#Product1 .Pro .cart:hover{
+  background-color:#ff5f5f;
+  color: #ffffff;
+  border: 1px solid;
+
+
+}
+
+/* الصفحة الرئيسية هذا الجزء خاص بالبنر _2  */
+ 
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items:center ;
+  background-image: url("img/banner/b-5.png");
+  width: 100%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+
+}
+
+#banner  h4{
+  color: #ffffff;
+  font-size: 30px;
+  padding: 5px 5px;
+  background-color: #ff7d7d;
+  border-radius: 10px;
+  margin: 20px;
+
+
+
+}
+
+#banner  h2 span{
+  color: #ff3a3a;
+  padding: 10px;
+
+}
+
+
+#banner  button {
+  font-size: 30px;
+  background-color: #ff3a3a;
+  margin-left: -20px 30px 30px;
+  padding: 10px;
+}
+
+
+/* الصفحة الرئيسية هذا الجزء خاص بالفوتر  */
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+footer .logo{
+  width: 50%;
+  margin-bottom: 30px;
+
+}
+
+footer h4{
+  font-weight: 1000;
+  font-size: 14px;
+  padding-bottom: 20px;
+  
+
+}
+footer p{
+  font-weight: 500;
+  font-size: 13px;
+  margin: 0 0 8px 0;
+
+}
+
+
+footer a{
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  color: #2b2b2b;
+  margin: 10px;
+
+}
+
+footer .Follow{
+  margin-top: 20px;
+
+}
+
+footer .Follow i{
+  color: #000000;
+  padding-right: 4px;
+  cursor: pointer;
+  
+}
+
+footer .install .row img{
+  background-color: #ff5f5f ;
+  border: 1px solid #202020;
+  border-radius: 5px;
+}
+
+footer .install img{
+  margin: 10px 0 15px 0;
+}
+
+footer .Follow i:hover,
+footer a:hover{
+  color: #ff3a3a;
+}
+
+footer .Copyright{
+  width: 100%;
+  text-align: center;
+
+}
+
+
+/* Shop page صفحة المتجر */
+
+#page-header{
+  background-image: url("img/banner/b-4.png");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+  align-items:center ;
+
+}
+
+#page-header h2,
+#page-header p{
+  color: #ff3a3a;
+  background-color: #ffffff;
+  font-size: 30px;
+  padding: 10px 30px;
+  flex-direction: column;
+  border-radius: 15px;
+
+
+
+}
+
+#pagination {
+  text-align: center;
+}
+
+
+#pagination a{
+  text-decoration: none;
+  background-color: #ff5f5f;
+  padding: 15px 20px ;
+  border-radius: 50px;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+#pagination a i{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* single product صقحة تفاصيل المنتج*/
+
+
+#prodetails{
+  display: flex;
+  margin-top: 20px;
+
+}
+
+#prodetails .singel-pro-image{
+  width: 40%;
+  margin-right: 50px;
+  padding-left: 70px;
+  padding-top: 30px;
+  
+}
+.small-img-group{
+  display: flex;
+  justify-content: space-between;
+
+
+}
+.small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#prodetails .single-pro-details{
+  width: 50%;
+  padding-top: 50px;
+
+}
+
+#prodetails .single-pro-details h4 {
+  padding: 40px 0 20px 0;
+}
+
+
+#prodetails .single-pro-details h2 {
+  font-size: 26px;
+}
+
+#prodetails .single-pro-details select{
+  display: block;
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-width: 1px;
+  
+}
+
+
+#prodetails .single-pro-details input{
+  width: 70px;
+  height: 30px;
+  padding-left: 15px;
+  padding-top: 4px;
+  font-size: 14px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #ff5f5f;
+
+
+}
+
+#prodetails .single-pro-details input:focus{
+  outline: none;
+}
+
+#prodetails .single-pro-details button{
+  background-color: #b5ffda;
+  color: #202020;
+
+}
+
+#prodetails .single-pro-details button:hover{
+  background-color: #ff3a3a;
+  color: #ffffff;
+
+
+}
+
+
+#prodetails .single-pro-details span{
+  line-height: 25px;
+}
+
+
+/*wishlist هذا الجزء خاص ب*/
+#cart h2{
+  border-collapse: collapse;
+  width: 80%;
+  table-layout: fixed;
+  align-items: center;
+  margin: 30px 0 30px 600px;
+}
+
+
+#cart-container  table{
+  border-collapse: collapse;
+  width: 80%;
+  table-layout: fixed;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+#cart-container  table thead{
+
+  font-weight: bold;
+
+
+}
+
+
+#cart-container  table thead td{
+
+  color: #fff;
+  border: none;
+  text-align: center;
+  background-color: #ff5f5f;
+  border-radius: 0px 50px;
+  padding: 10px 0;
+
+
+
+}
+
+#cart-container  tbody input{
+  width: 70px;
+  height: 30px;
+  padding-left: 15px;
+  padding-top: 4px;
+  font-size: 20px;
+  border-width: 1px;
+  border-color: #ff5f5f;
+  border-radius: 10px;
+
+
+}
+#cart-container table td{
+  border: 1px solid #e7e7e7;
+  text-align: center;
+}
+
+#cart-container  tbody img {
+  width: 100px;
+  border-radius: 20px;
+  margin-top: 5px;
+ 
+}
+
+#cart-container table td:nth-child(1){
+  width: 100px;
+}
+
+#cart-container table td:nth-child(4),
+#cart-container table td:nth-child(5),
+#cart-container table td:nth-child(6){
+  width: 130px;
+}
+
+#cart-container  tbody i{
+  color: #ff3a3a;
+}
+
+#cart-bottom .coupcn>div{
+  border: 1px solid #3f3f3f;
+  border-radius: 35px;
+  width: 500px;
+  margin-top: 30px;
+  margin-left: 60px;
+
+
+}
+
+#cart-bottom .coupcn h5,
+#cart-bottom .total h5{
+  color: #fff;
+  border: none;
+  text-align: center;
+  background-color: #ff5f5f;
+  border-radius: 50px 50px 0  0;
+  padding: 10px 12px;
+  font-weight: bold;
+
+
+}
+
+#cart-bottom .coupcn p,
+#cart-bottom .coupcn input{
+  padding: 0 12px;
+}
+
+#cart-bottom .coupcn input{
+  height: 44px;
+}
+
+#cart-bottom .coupcn input{
+  margin: 0 0 20px 12px;
+  border-radius: 10px;
+  border: 1 solid #ff5f5f;
+  color: #ff5f5f;
+
+}
+#cart-bottom .coupcn button{
+  padding: 20px 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: #ff3a3a;
+  border: #ff3a3a;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#cart-bottom .total h6{
+  font-size: 16px;
+}
+
+
+#cart-bottom .total p{
+  font-size: 20px;
+  font-weight: bold;
+  text-align:right;
+}
+
+#cart-bottom .total div>div{
+ 
+  padding: 10px 20px;
+  
+}
+#cart-bottom .total>div{
+  border: 1px solid #3f3f3f;
+  border-radius: 35px;
+  width: 700px;
+  margin-top: -165px;
+  margin-left: 600px;
+  
+}
+
+
+
+#cart-bottom .total button{
+  padding: 20px 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: #ff3a3a;
+  border: #ff3a3a;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 230px;
+
+
+}
+
+
+
+
+/*wishlist هذا الجزء خاص ب*/
+#wishlist h2{
+  border-collapse: collapse;
+  width: 80%;
+  table-layout: fixed;
+  align-items: center;
+  margin: 30px 0 30px 600px;
+}
+
+
+#wishlist-container  table{
+  border-collapse: collapse;
+  width: 80%;
+  table-layout: fixed;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+#wishlist-container  table thead{
+
+  font-weight: bold;
+
+
+}
+
+
+#wishlist-container  table thead td{
+
+  color: #fff;
+  border: none;
+  text-align: center;
+  background-color: #ff5f5f;
+  padding: 10px 0;
+
+
+
+}
+
+#wishlist-container  tbody input{
+  width: 70px;
+  height: 30px;
+  padding-left: 15px;
+  padding-top: 4px;
+  font-size: 20px;
+  border-width: 1px;
+  border-color: #ff5f5f;
+  border-radius: 10px;
+
+
+}
+#wishlist-container table td{
+  border: 1px solid #e7e7e7;
+  text-align: center;
+}
+
+#wishlist-container  tbody img {
+  width: 100px;
+  border-radius: 20px;
+  margin-top: 5px;
+ 
+}
+
+
+
+#wishlist-container table td:nth-child(1){
+  width: 100px;
+}
+
+#wishlist-container table td:nth-child(4),
+#wishlist-container table td:nth-child(5){
+  width: 130px;
+}
+
+#wishlist-container  tbody i{
+  color: #ff3a3a;
+}
+
+#wishlist-container tbody h4:nth-child(1){
+  width: 100px;
+  margin: 15px;
+}
+
+
+#wishlist-container .Out-Of-Stoke {
+  padding: 5px 5px;
+  color: #fff;
+  background-color: #1d1d1d;
+  border: #3a3a3a;
+  font-weight: 600;
+  font-size: 13px;
+
+}
+
+#wishlist-container tbody h4 {
+  padding: 5px 5px;
+  color: #000000;
+  background-color: #b5ffda;
+  border: #000000;
+  font-weight: 600;
+  font-size: 13px;
+
+}
+
+ #wishlist-container .contact {
+    color: #FFFFFF;
+    background-color: #ff3a3a;
+}
+
+
+
+#wishlist-container  tbody  button{
+  padding: 20px 20px;
+  color: #fff;
+  background-color: #ff5f5f;
+  border: #ff5f5f;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+
+
+}
+
+#wishlist-bottom .coupcn p,
+#wishlist-bottom .coupcn input{
+  padding: 0 12px;
+  
+}
+
+#wishlist-bottom .coupcn input{
+  height: 44px;
+  width: 60%;
+  margin: 0 0 20px 12px;
+  border-radius: 10px;
+  border: 1 solid #ff5f5f;
+  color: #ff5f5f;
+
+}
+
+
+
+
+#wishlist-bottom .coupcn h5{
+  color: #fff;
+    border: none;
+    text-align: center;
+    background-color: #ff5f5f;
+    border-radius: 50px 50px 0 0;
+    padding: 10px 12px;
+    font-weight: bold;
+}
+
+
+#wishlist-bottom .coupcn p{
+  font-size: 20px;
+  font-weight: 500;
+  text-align:right;
+  text-align: center;
+}
+
+
+#wishlist-bottom .coupcn>div{
+  border: 1px solid #ff1818;
+  border-radius: 35px;
+  width: 700px;
+  margin:auto;
+  margin-top:50px;
+  margin-bottom: 50px;
+
+  
+}
+
+
+
+#wishlist-bottom   .coupcn  button{
+  padding: 15px 15px;
+margin-left: 50px;
+margin-bottom: 20px;
+color: #ffffff;
+background-color: #ff3a3a;
+border: #ff3a3a;
+border-radius: 20px;
+font-weight: bold;
+font-size: 16px;
+cursor: pointer;
+  
+}
+
+/*....*/
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the navigation links */
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
