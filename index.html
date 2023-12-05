@@ -22,7 +22,12 @@
         <form class="search-bar">
             <form  >
                 <i class="fas fa-search"></i>
-                <input type="text" neme="" id="search-item" placeholder="ما الذي تبحث عنه ؟" onkeyup="search()" >
+                <input type="text" name="" id="search-item" placeholder="ما الذي تبحث عنه ؟" onkeyup="search()" list="search-history">
+                <datalist id="search-history">
+                    <option value="bags">
+                        <option value="clothes">
+                            <option value="computer">
+                </datalist>
                 <button type="submit">Search</button>
     
             </form>
