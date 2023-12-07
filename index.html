@@ -11,7 +11,12 @@
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="img/SVG/favicon.svg">
-        
+        <style>
+            datalist{
+                text-align:left ;
+                direction:ltr ;
+            }
+        </style>
     </head>
    
     </body>
@@ -23,7 +28,7 @@
             <form  >
                 <i class="fas fa-search"></i>
                 <input type="text" name="" id="search-item" placeholder="ما الذي تبحث عنه ؟" onkeyup="search()" list="search-history">
-                <datalist id="search-history">
+                <datalist id="search-history" >
                     <option value="bags">
                         <option value="clothes">
                             <option value="computer">
