@@ -122,10 +122,11 @@ body {
   justify-content: center;
   outline: #202020;
   padding-left: 150px;
-
-
-
 }
+#data-list{
+                text-align:left ;
+                direction:ltr ;
+            }
 form{
   background: #ffffff;
   width: 450px;
